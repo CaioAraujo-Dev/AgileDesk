@@ -138,6 +138,17 @@ transform: scale(1.04);
 transition: transform 0.4s ease;
 }
 
+#erro{
+  margin-top: 0.5rem;
+  display: none;
+  color:orange ;
+ align-items: center;
+  gap: 4px;
+}
+#erro p{
+  margin: 0;
+}
+
 
 .image-column {
   flex: 5.5;

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
@@ -32,12 +32,12 @@
           <div class="form-logo">
             <img src="img/Agile-Desk.jpg" alt="logo AgileDesk" class="img-logo">
           </div>
-          <form action="">
+          <form id="login-form" action="">
             <div class="input-group">
               <div class="textfield">
                 <label for="name-user">l</label>
                 <div class="input-border-gradient">
-                  <input type="text" id="name-user" name="name-user" placeholder="Usuário" required>
+                  <input type="text" id="login-usuario" name="name-user" placeholder="Usuário" maxlength="20">
                 </div>
 
               </div>
@@ -45,15 +45,20 @@
               <div class="textfield">
                 <label for=" login-senha"></label>
                 <div class="input-border-gradient">
-                  <input type="password" id="login-senha" name="login-senha" placeholder="Senha" required>
+                  <input type="password" id="login-senha" name="login-senha" placeholder="Senha" maxlength="12" >
                 </div>
 
               </div>
+              <div id="erro">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <p></p>
+              </div>
+              
               <div class="btn-entrar">
                 <input type="submit" value="Entrar">
               </div>
             </div>
-
+            
           </form>
         </div>
       </div>
@@ -64,9 +69,9 @@
   </div>
 
 
-
+<script src="script.js"> </script>
 </body>
 
-
+  
 
 </html>
